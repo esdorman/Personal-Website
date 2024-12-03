@@ -32,24 +32,50 @@ body {
   margin: 0;
   padding: 0;
 }
+
 header {
   background-color: #4CAF50;
   color: white;
   text-align: center;
   padding: 1em 0;
 }
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
 .container {
   padding: 20px;
 }
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
+
 .content {
   max-width: 800px;
   margin: auto;
 }
+
+.job {
+  margin-bottom: 20px;
+}
+
+.job-title {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.company, .dates {
+  font-style: italic;
+}
+
 footer {
   background-color: #333;
   color: white;
@@ -58,12 +84,4 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
-}
-.contact-info a {
-  color: #4CAF50;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
 }
