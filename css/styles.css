@@ -29,41 +29,71 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  background-color: #f1f1f1; /* Light Grey Background */
+  color: #333333; /* Dark Grey Text */
 }
+
 header {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #542d11c1; /* Deep Blue */
+  color: #ffffff; /* White Text */
   text-align: center;
-  padding: 1em 0;
 }
+
 .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top */
   padding: 20px;
+  gap: 20px;
 }
+
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 400px; /* Reduce the size to have less white space */
+  height: 400px; /* Ensure the image is square */
   border-radius: 50%;
-}
-.content {
-  max-width: 800px;
+  border: 5px solid #542d11c1; /* Teal Border */
   margin: auto;
 }
+
+.content {
+  flex: 1 1 auto;
+  max-width: 1300px;
+}
+
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #542d11c1; /* Deep Blue */
+  color: #ffffff; /* White Text */
   text-align: center;
-  padding: 10px 0;
-  position: fixed;
+  padding: 5px;
   width: 100%;
   bottom: 0;
 }
+
 .contact-info a {
-  color: #4CAF50;
+  color: #ffffff; /* White Links */
   text-decoration: none;
 }
 
 .contact-info a:hover {
   text-decoration: underline;
+}
+
+
+/* Adjusting heading and paragraph sizes */
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2.2em; /* Increase size */
+}
+
+h3 {
+  font-size: 1.7em; /* Increase size */
+}
+
+p {
+  line-height: 1.8;
+  font-size: 1.4em; /* Larger paragraph text */
 }
