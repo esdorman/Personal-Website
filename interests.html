@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiences</title>
+    <link rel="stylesheet" href="css/experiences.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Interests</title>
 </head>
 <body>
     <header>
-        <h1>My Work Experience</h1>
+        <h1>My Interests</h1>
         <nav>
             <a href="index.html" style="color: white; text-decoration: none; margin-right: 10px;">Home</a>
             <a href="experiences.html" style="color: white; text-decoration: none;">Experiences</a>
@@ -15,29 +19,41 @@
     </header>
     <div class="container">
         <div class="content">
-            <h2>Work Experience</h2>
-            <div class="job">
-                <p class="job-title">Senior Web Developer</p>
-                <p class="company">XYZ Corp., San Francisco, CA</p>
-                <p class="dates">January 2020 - Present</p>
-                <p>At XYZ Corp., I lead a team of developers in creating innovative web applications. My responsibilities include project management, code review, and implementing best practices in web development.</p>
-            </div>
-            <div class="job">
-                <p class="job-title">Web Developer</p>
-                <p class="company">ABC Inc., San Francisco, CA</p>
-                <p class="dates">June 2016 - December 2019</p>
-                <p>As a web developer at ABC Inc., I worked on a variety of projects ranging from e-commerce sites to complex web applications, focusing on front-end development and user experience.</p>
-            </div>
-            <div class="job">
-                <p class="job-title">Junior Developer</p>
-                <p class="company">Tech Solutions, San Francisco, CA</p>
-                <p class="dates">July 2014 - May 2016</p>
-                <p>My role at Tech Solutions involved assisting senior developers, writing clean code, and learning the intricacies of web development from a team of experienced professionals.</p>
+            <div class="grid-container">
+                <div class="grid-item" data-description="This is a longer description for Image 1.">
+                    <img src="path/to/image1.jpg" alt="Description of Image 1">
+                    <div class="caption">Caption for Image 1</div>
+                </div>
+                <div class="grid-item" data-description="This is a longer description for Image 2.">
+                    <img src="path/to/image2.jpg" alt="Description of Image 2">
+                    <div class="caption">Caption for Image 2</div>
+                </div>
+                <div class="grid-item" data-description="This is a longer description for Image 3.">
+                    <img src="path/to/image3.jpg" alt="Description of Image 3">
+                    <div class="caption">Caption for Image 3</div>
+                </div>
+                <!-- Add more grid items as needed -->
             </div>
         </div>
     </div>
+
+    <!-- Lightbox container -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" id="lightboxClose">&times;</span>
+        <img id="lightboxImg" src="" alt="">
+        <div class="description" id="lightboxDescription"></div>
+    </div>
+
     <footer>
-        <p>&copy; 2023 John Doe</p>
+        <div class="contact-info">
+            <p><i class="fa-regular fa-envelope"></i> <a href="mailto:krytt@umich.edu">krytt@umich.edu</a></p>
+            <p><i class="fa-brands fa-github"></i> <a href="https://github.com/esdorman">@esdorman</a></p>
+            <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/door.ericc/" target="_blank">@door.ericc</a></p>
+            <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
+            <p><i class="fa-brands fa-spotify"></i> <a href="https://open.spotify.com/user/rl60qyqp3m4cjuzvoce55tyjp" target="_blank">@JED</a></p>
+        </div>
     </footer>
+    <script src="js/interests.js"></script>
+    <script src="https://kit.fontawesome.com/f6fe402f8d.js" crossorigin="anonymous"></script>
 </body>
 </html>

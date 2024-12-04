@@ -4,41 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/experiences.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <title>Experiences</title>
 </head>
 <body>
     <header>
-        <h1>My Work Experience</h1>
-        <nav>
-            <a href="index.html" style="color: white; text-decoration: none; margin-right: 10px;">Home</a>
-            <a href="experience.html" style="color: white; text-decoration: none;">Experiences</a>
-        </nav>
+        <div class="header-content">
+            <h1>My Work Experience</h1>
+            <button id="sidebarToggle" class="menu-btn" tabindex="0">&#9776; Menu</button>
+        </div>
     </header>
+    <aside id="sidebar" class="sidebar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experiences</a>
+        </nav>
+    </aside>
+    <div class="overlay" id="overlay"></div>
     <div class="container">
         <div class="content">
             <h2>Work Experience</h2>
+            <p class="resume-plug"><a href="https://docs.google.com/document/d/1Lgh3RRMr0sC76dn9B3NDlXgfwMK1yGFG/edit?usp=sharing&ouid=112465016544451359509&rtpof=true&sd=true">(See Resume For More Details)</a></p>
             <div class="job">
-                <p class="job-title">Senior Web Developer</p>
-                <p class="company">XYZ Corp., San Francisco, CA</p>
-                <p class="dates">January 2020 - Present</p>
-                <p>At XYZ Corp., I lead a team of developers in creating innovative web applications. My responsibilities include project management, code review, and implementing best practices in web development.</p>
+                <p class="job-title">Tech Intern</p>
+                <p class="company"><a href="https://www.plan-sys.com/">Planned Systems International, VA</a></p>
+                <p class="dates">2023 Summer</p>
+                <p>Interned under the General Counsel of PSI, developed an AI application to respond to government contract proposals.
+                    Granted me with real-world skills, such as how to work in groups, work with a tight deadline, and act as a role model to those around me.
+                </p>
             </div>
             <div class="job">
-                <p class="job-title">Web Developer</p>
-                <p class="company">ABC Inc., San Francisco, CA</p>
-                <p class="dates">June 2016 - December 2019</p>
-                <p>As a web developer at ABC Inc., I worked on a variety of projects ranging from e-commerce sites to complex web applications, focusing on front-end development and user experience.</p>
+                <p class="job-title">Peer Mentor</p>
+                <p class="company"><a href="https://lsa.umich.edu/mrads">University of Michigan Michigan Research and Discovery Scholars (MRADS), MI</a></p>
+                <p class="dates">2023 School Year</p>
+                <p>As a peer mentor at MRADS, we were given groups of incoming freshman to help guide their research process. This gave me many critical skills,
+                    like how to think on the fly if something doesn't go according to plan, and 
+                </p>
             </div>
             <div class="job">
-                <p class="job-title">Junior Developer</p>
-                <p class="company">Tech Solutions, San Francisco, CA</p>
-                <p class="dates">July 2014 - May 2016</p>
-                <p>My role at Tech Solutions involved assisting senior developers, writing clean code, and learning the intricacies of web development from a team of experienced professionals.</p>
+                <p class="job-title">Researcher</p>
+                <p class="company"><a href="https://lsa.umich.edu/mrads">University of Michigan Michigan Research and Discovery Scholars (MRADS), MI</a></p>
+                <p class="dates">2022 School Year</p>
+                <p>As a freshman I joined a research group via MRADS and was tasked with completely revamping a decade old website to modern day standards.</p>
             </div>
         </div>
     </div>
     <footer>
-        <p>&copy; 2023 John Doe</p>
+        <div class="contact-info">
+            <p><i class="fa-regular fa-envelope"></i> <a href="mailto:krytt@umich.edu">krytt@umich.edu</a></p>
+            <p><i class="fa-brands fa-github"></i> <a href="https://github.com/esdorman">@esdorman</a></p>
+            <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/door.ericc/" target="_blank">@door.ericc</a></p>
+            <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
+            <p><i class="fa-brands fa-spotify"></i> <a href="https://open.spotify.com/user/rl60qyqp3m4cjuzvoce55tyjp" target="_blank">@JED</a></p>
+        </div>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/f6fe402f8d.js" crossorigin="anonymous"></script>
 </body>
 </html>

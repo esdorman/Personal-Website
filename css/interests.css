@@ -1,0 +1,204 @@
+/*--------------------------RESET STYLES---------------------------*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*--------------------------RESET END-----------------------------*/
+
+html,body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: #f1f1f1;
+  color: #333333;
+  height: 100%;
+  margin: 0; /* Reset default margin */
+  display: flex;
+  flex-direction: column; /* Arrange body elements in a column */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*--------------------------RESET END-----------------------------*/
+
+html, body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: #f1f1f1;
+  color: #333333;
+  height: 100%;
+  margin: 0; /* Reset default margin */
+  display: flex;
+  flex-direction: column; /* Arrange body elements in a column */
+}
+
+header {
+  background-color: #542d11c1;
+  color: #ffffff;
+  text-align: center;
+}
+
+.container {
+  flex: 1; /* Allow the container to expand and fill available space */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top */
+  padding: 20px;
+  gap: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+}
+
+/* Styling for the lightbox (hidden by default) */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox .description {
+    color: white;
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+footer {
+  background-color: #542d11c1;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  bottom: 0;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.contact-info p {
+  color: #ffffff; /* White Links */
+  text-decoration: none;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+/* Adjusting heading and paragraph sizes */
+h1 {
+  font-size: 2.5em;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 1.4em;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}

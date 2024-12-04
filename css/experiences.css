@@ -28,60 +28,192 @@ p, h1, h2, h3, h4, h5, h6 {
 /*--------------------------RESET END-----------------------------*/
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+  background-color: #f1f1f1;
+  color: #333333;
+  overflow-x: hidden;
 }
 
 header {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #542d11cf;
+  color: #ffffff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
   text-align: center;
-  padding: 1em 0;
+  flex-grow: 1;
 }
 
-header nav {
-  margin-top: 10px;
+header .menu-btn:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
 }
 
-header nav a {
+header .menu-btn {
+  background: none;
+  border: none;
   color: white;
-  text-decoration: none;
-  margin-right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 0;
 }
 
-header nav a:hover {
+.resume-plug a {
+  color: #ffffff;
   text-decoration: underline;
 }
 
+.resume-plug a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #542d11cf;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.sidebar nav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar nav a:hover {
+  background-color: #333;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 500;
+  cursor: pointer;
+}
+
 .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top */
   padding: 20px;
+  gap: 20px;
 }
 
+/* Add padding to content to not be hidden under header */
 .content {
-  max-width: 800px;
-  margin: auto;
+  flex: 1 1 auto;
+  max-width: 1300px;
+  padding-top: 10px;
 }
 
+footer {
+  background-color: #542d11c1;
+  color: #ffffff; /* White Text */
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  bottom: 0;
+}
+
+.contact-info a {
+  color: #ffffff; /* White Links */
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Adjusting heading and paragraph sizes */
+h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.2em; /* Increase size */
+}
+
+h3 {
+  font-size: 1.7em; /* Increase size */
+}
+
+p {
+  line-height: 1.8;
+  font-size: 1.4em; /* Larger paragraph text */
+}
+
+/* Additional styles for subpage */
 .job {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
   margin-bottom: 20px;
 }
 
 .job-title {
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.4em;
 }
 
 .company, .dates {
   font-style: italic;
+  color: #666;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+/* Link styling */
+a {
+  color: #542d11c1;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a:hover {
+  color: #333; /* Dark Grey (slightly darker than the text) */
+  background-color: #f2f2f2;
+  color: #7f5118;
+  border-radius: 10px;
+}
+
+.resume-plug a {
+  color: #333;
+}
+
+.resume-plug a:hover {
+  color: #000000;
 }
