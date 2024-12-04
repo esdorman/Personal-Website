@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiences</title>
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <title>About Education</title>
 </head>
 <body>
-    <header>
-        <h1>My Work Experience</h1>
-        <nav>
-            <a href="index.html" style="color: white; text-decoration: none; margin-right: 10px;">Home</a>
-            <a href="experiences.html" style="color: white; text-decoration: none;">Experiences</a>
-        </nav>
-    </header>
-    <div class="container">
-        <div class="content">
-            <h2>Work Experience</h2>
-            <div class="job">
-                <p class="job-title">Senior Web Developer</p>
-                <p class="company">XYZ Corp., San Francisco, CA</p>
-                <p class="dates">January 2020 - Present</p>
-                <p>At XYZ Corp., I lead a team of developers in creating innovative web applications. My responsibilities include project management, code review, and implementing best practices in web development.</p>
-            </div>
-            <div class="job">
-                <p class="job-title">Web Developer</p>
-                <p class="company">ABC Inc., San Francisco, CA</p>
-                <p class="dates">June 2016 - December 2019</p>
-                <p>As a web developer at ABC Inc., I worked on a variety of projects ranging from e-commerce sites to complex web applications, focusing on front-end development and user experience.</p>
-            </div>
-            <div class="job">
-                <p class="job-title">Junior Developer</p>
-                <p class="company">Tech Solutions, San Francisco, CA</p>
-                <p class="dates">July 2014 - May 2016</p>
-                <p>My role at Tech Solutions involved assisting senior developers, writing clean code, and learning the intricacies of web development from a team of experienced professionals.</p>
-            </div>
-        </div>
+  <header>
+    <div class="header-content">
+      <h1>Education & Background</h1>
+      <button id="sidebarToggle" class="menu-btn">&#9776; Menu</button>
     </div>
-    <footer>
-        <p>&copy; 2023 John Doe</p>
-    </footer>
+  </header>
+  <aside id="sidebar" class="sidebar">
+      <nav>
+          <a href="index.html">Home</a>
+          <a href="experiences.html">Experiences</a>
+          <a href="interests.html">Interests</a>
+          <a href="contact.html">Contact</a>
+      </nav>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <main>
+    <div class="container">
+      <img src="Profile2.jpg" alt="University of Michigan">
+      <div class="content">
+        <h2>Eric Dorman</h2>
+        <h3 class="education">Education</h3>
+          <p>Hello, my name is Eric, and I am a student attending the University of Michigan majoring in computer science. I attended High School in Irvine, California
+             where I finished with a GPA of 4.17.
+          </p>
+        <h3 class="background">Background</h3>
+         <p>I was born in northern Virginia, in the city of Arlington, near D.C. where I attended school up until my first year of high school before moving to California. During my remaining
+            three years in high school I worked hard to once again make friends and build relations. I was a part of the high school's "Tech Staff", where we would travel around
+            to classrooms with something that needed to be fixed or replaced. I also founded the ultimate frisbee club as that was a big part of my childhood.
+            I graduated from Northwood High School in 2022, where I then began to further my education at the University of Michigan in Ann Arbor.
+            Now, I am working towards a bachelor's in computer science and am in my junior year. (as of 2024)
+         </p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="contact-info">
+      <p><i class="fa-regular fa-envelope"></i> <a href="mailto:krytt@umich.edu">krytt@umich.edu</a></p>
+      <p><i class="fa-brands fa-github"></i> <a href="https://github.com/esdorman">@esdorman</a></p>
+      <p><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/door.ericc/" target="_blank">@door.ericc</a></p>
+      <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
+      <p><i class="fa-brands fa-spotify"></i> <a href="https://open.spotify.com/user/rl60qyqp3m4cjuzvoce55tyjp" target="_blank">@JED</a></p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/f6fe402f8d.js" crossorigin="anonymous"></script>
 </body>
 </html>

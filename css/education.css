@@ -27,7 +27,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /*--------------------------RESET END-----------------------------*/
 
-html,body {
+html, body {
   font-family: "Titillium Web", sans-serif;
   background-color: #f1f1f1;
   color: #333333;
@@ -38,17 +38,90 @@ html,body {
 }
 
 header {
-  background-color: #542d11c1;
+  background-color: #542d11cf;
   color: #ffffff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
   text-align: center;
+  flex-grow: 1;
+}
+
+header .menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 0;
+}
+
+header .menu-btn:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #542d11cf;
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.sidebar nav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar nav a:hover {
+  background-color: #333;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 500;
+  cursor: pointer;
 }
 
 .container {
-  flex: 1; /* Allow the container to expand and fill available space */
+  flex: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start; /* Align items at the top */
+  align-items: flex-start;
   padding: 20px;
   gap: 20px;
 }
@@ -89,17 +162,20 @@ a:hover {
   padding-right: 5px;
   text-decoration: underline;
 }
+
 .interests a {
   transition: padding-left 0.3s ease, padding-right 0.3s ease; /* Add transition */
 }
+
 .interests a:hover {
   padding-left: 20px;
   text-decoration: none;
 }
 
 .experience a {
-   transition: padding-left 0.3s ease, padding-right 0.3s ease; /* Add transition */
+  transition: padding-left 0.3s ease, padding-right 0.3s ease; /* Add transition */
 }
+
 .experience a:hover {
   padding-left: 20px;
   text-decoration: none;
@@ -108,6 +184,7 @@ a:hover {
 .education a {
   transition: padding-left 0.3s ease, padding-right 0.3s ease; /* Add transition */
 }
+
 .education a:hover {
   padding-left: 20px;
   text-decoration: none;
@@ -117,7 +194,7 @@ a:hover {
   color: #ffffff; /* White Links */
   text-decoration: none;
   padding: 0;
-  font-size: 1.2em
+  font-size: 1.2em;
 }
 
 /* Adjusting heading and paragraph sizes */
@@ -140,11 +217,11 @@ p {
   padding-left: 10px;
   padding-bottom: 20px;
 }
+
 footer {
   background-color: #542d11c1;
   color: #ffffff;
   text-align: center;
   padding: 5px;
   width: 100%;
-  bottom: 0;
 }

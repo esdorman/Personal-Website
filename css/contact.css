@@ -27,11 +27,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /*--------------------------RESET END-----------------------------*/
 
-body {
+html, body {
   font-family: "Titillium Web", sans-serif;
   background-color: #f1f1f1;
   color: #333333;
-  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -60,11 +63,6 @@ header h1 {
   flex-grow: 1;
 }
 
-header .menu-btn:focus {
-  outline: 2px solid #ffffff;
-  outline-offset: 4px;
-}
-
 header .menu-btn {
   background: none;
   border: none;
@@ -76,14 +74,9 @@ header .menu-btn {
   right: 0;
 }
 
-.resume-plug a {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.resume-plug a:hover {
-  color: #ccc;
-  text-decoration: none;
+header .menu-btn:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
 }
 
 .sidebar {
@@ -124,79 +117,74 @@ header .menu-btn {
 }
 
 .container {
+  flex: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start; /* Align items at the top */
+  align-items: flex-start;
   padding: 20px;
   gap: 20px;
 }
 
-/* Add padding to content to not be hidden under header */
 .content {
   flex: 1 1 auto;
   max-width: 1300px;
-  padding-top: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+  border-color: #542d11c1;
+  outline: none;
+}
+
+button {
+  background-color: #542d11c1;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7f5118;
 }
 
 footer {
   background-color: #542d11c1;
-  color: #ffffff; /* White Text */
+  color: #ffffff;
   text-align: center;
   padding: 5px;
   width: 100%;
-  bottom: 0;
 }
 
-.contact-info a {
-  color: #ffffff; /* White Links */
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-/* Adjusting heading and paragraph sizes */
-h1 {
-  font-size: 2.5em;
-  font-weight: 400;
-}
-
-h2 {
-  font-size: 2.2em; /* Increase size */
-}
-
-h3 {
-  font-size: 1.7em; /* Increase size */
-}
-
-p {
-  line-height: 1.8;
-  font-size: 1.4em; /* Larger paragraph text */
-}
-
-/* Additional styles for subpage */
-.job {
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
-.job-title {
-  font-weight: bold;
-  font-size: 1.4em;
-}
-
-.company, .dates {
-  font-style: italic;
-  color: #666;
-}
-.company a {
-  color:#542d11c1
-}
 a {
   color: #f1f1f1;
   text-decoration: none;
@@ -212,10 +200,31 @@ a:hover {
   padding-left: 20px;
   text-decoration: underline;
 }
-.resume-plug a {
-  color: #333;
+
+
+.contact-info p {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0;
+  font-size: 1.2em;
 }
 
-.resume-plug a:hover {
-  color: #000000;
+h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 1.4em;
+  padding-left: 10px;
+  padding-bottom: 20px;
 }
