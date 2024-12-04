@@ -27,19 +27,24 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /*--------------------------RESET END-----------------------------*/
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f1f1f1; /* Light Grey Background */
-  color: #333333; /* Dark Grey Text */
+html,body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: #f1f1f1;
+  color: #333333;
+  height: 100%;
+  margin: 0; /* Reset default margin */
+  display: flex;
+  flex-direction: column; /* Arrange body elements in a column */
 }
 
 header {
-  background-color: #542d11c1; /* Deep Blue */
-  color: #ffffff; /* White Text */
+  background-color: #542d11c1;
+  color: #ffffff;
   text-align: center;
 }
 
 .container {
+  flex: 1; /* Allow the container to expand and fill available space */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -49,10 +54,10 @@ header {
 }
 
 .profile-pic {
-  width: 400px; /* Reduce the size to have less white space */
+  width: 400px;
   height: 400px; /* Ensure the image is square */
   border-radius: 50%;
-  border: 5px solid #542d11c1; /* Teal Border */
+  border: 5px solid #542d11c1;
   margin: auto;
 }
 
@@ -61,39 +66,87 @@ header {
   max-width: 1300px;
 }
 
-footer {
-  background-color: #542d11c1; /* Deep Blue */
-  color: #ffffff; /* White Text */
-  text-align: center;
-  padding: 5px;
-  width: 100%;
-  bottom: 0;
-}
-
-.contact-info a {
-  color: #ffffff; /* White Links */
+a {
+  color: #f1f1f1;
   text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease; /* Add transition */
 }
 
-.contact-info a:hover {
+a:hover {
+  color: #333;
+  background-color: #f2f2f2;
+  padding-left: 20px;
   text-decoration: underline;
 }
 
+.content a {
+  color: #542d11c1;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.content a:hover {
+  text-decoration: underline;
+}
+.interests a {
+  transition: padding-left 0.3s ease, padding-right 0.3s ease; /* Add transition */
+}
+.interests a:hover {
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.experience a {
+   transition: padding-left 0.3s ease, padding-right 0.3s ease; /* Add transition */
+}
+.experience a:hover {
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.education a {
+  transition: padding-left 0.3s ease, padding-right 0.3s ease; /* Add transition */
+}
+.education a:hover {
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.contact-info p {
+  color: #ffffff; /* White Links */
+  text-decoration: none;
+  padding: 0;
+  font-size: 1.2em
+}
 
 /* Adjusting heading and paragraph sizes */
 h1 {
   font-size: 2.5em;
+  font-weight: 200;
 }
 
 h2 {
-  font-size: 2.2em; /* Increase size */
+  font-size: 2.2em;
 }
 
 h3 {
-  font-size: 1.7em; /* Increase size */
+  font-size: 1.7em;
 }
 
 p {
   line-height: 1.8;
-  font-size: 1.4em; /* Larger paragraph text */
+  font-size: 1.4em;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+footer {
+  background-color: #542d11c1;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  bottom: 0;
 }

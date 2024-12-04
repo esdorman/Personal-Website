@@ -195,21 +195,21 @@ p {
   color: #666;
 }
 
-/* Link styling */
 a {
-  color: #542d11c1;
+  color: #f1f1f1;
   text-decoration: none;
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease; /* Add transition */
 }
 
 a:hover {
-  color: #333; /* Dark Grey (slightly darker than the text) */
+  color: #333;
   background-color: #f2f2f2;
-  color: #7f5118;
-  border-radius: 10px;
+  padding-left: 20px;
+  text-decoration: underline;
 }
-
 .resume-plug a {
   color: #333;
 }

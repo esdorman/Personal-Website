@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/experiences.css">
+    <link rel="stylesheet" href="css/interests.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -11,28 +11,45 @@
 </head>
 <body>
     <header>
-        <h1>My Interests</h1>
-        <nav>
-            <a href="index.html" style="color: white; text-decoration: none; margin-right: 10px;">Home</a>
-            <a href="experiences.html" style="color: white; text-decoration: none;">Experiences</a>
-        </nav>
+        <div class="header-content">
+            <h1>My Interests</h1>
+            <button id="sidebarToggle" class="menu-btn" tabindex="0">&#9776; Menu</button>
+        </div>
     </header>
+    <aside id="sidebar" class="sidebar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="education.html">Education</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </aside>
+    <div class="overlay" id="overlay"></div>
     <div class="container">
         <div class="content">
             <div class="grid-container">
-                <div class="grid-item" data-description="This is a longer description for Image 1.">
-                    <img src="path/to/image1.jpg" alt="Description of Image 1">
-                    <div class="caption">Caption for Image 1</div>
+                <div class="grid-item" data-description="One of my main hobbies is to sit down and watch Youtube documentary-style videos on 
+                on many different topics that I happen to find interesting. The channel shown in the image (Mustard) is one such channel.">
+                    <img src="Mustard.jpg" alt="Mustard Youtube Channel Logo">
+                    <div class="caption">Mustard Youtube Channel</div>
                 </div>
-                <div class="grid-item" data-description="This is a longer description for Image 2.">
-                    <img src="path/to/image2.jpg" alt="Description of Image 2">
-                    <div class="caption">Caption for Image 2</div>
+                <div class="grid-item" data-description="Basketball has been a key part of my life ever since I was young. In all honesty I'm not very good,
+                though that doesn't matter to me as being good doesn't equal having fun.">
+                    <img src="Basketball.jpg" alt="Image of Basketball">
+                    <div class="caption">Basketball</div>
                 </div>
-                <div class="grid-item" data-description="This is a longer description for Image 3.">
-                    <img src="path/to/image3.jpg" alt="Description of Image 3">
-                    <div class="caption">Caption for Image 3</div>
+                <div class="grid-item" data-description="Youth Ultimate League of Arlington, or YULA is the ultimate frisbee league I played in for many
+                years when I was growing up. Ultimate, like basketball, has been a part of my life ever since 5th grade, as I stuck with it until
+                highshcool, when I moved away from the area, and was forced to quit the league. (I did end up making my own Ultimate Frisbee club, however, in my
+                junior year at Northwood)">
+                    <img src="YULA.jpg" alt="Youth Ultimate League of Arlington">
+                    <div class="caption">Youth Ultimate League of Arlington (YULA)</div>
                 </div>
-                <!-- Add more grid items as needed -->
+                <div class="grid-item" data-description="Ive had a passion for custom computers and computer modifications for as long as I can remember.
+                I've built multiple custom PC's for myself and friends, and helped fix my parents' computers whenever they ran into any hardware issues.">
+                    <img src="Custom_PC.png" alt="Custom Computer in White Theme">
+                    <div class="caption">Custom Computers</div>
+                </div>
             </div>
         </div>
     </div>
