@@ -26,21 +26,23 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------RESET END-----------------------------*/
-
-body {
+html, body {
   font-family: "Titillium Web", sans-serif;
-  background-color: #f1f1f1; /* Light Grey Background */
-  color: #333333; /* Dark Grey Text */
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  background-color: #f1f1f1;
+  color: #333333;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  background-color: #542d11cf; /* Deep Blue */
-  color: #ffffff; /* White Text */
-  padding: 10px 20px; /* Add padding to sides */
+  background-color: #542d11cf; 
+  color: #ffffff;
+  padding: 10px 20px;
   position: sticky;
   top: 0;
-  z-index: 500; /* Ensures the header sits above other content */
+  z-index: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,14 +53,14 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 0 auto; /* Center the content horizontally */
+  margin: 0 auto;
   position: relative;
 }
 
 header h1 {
   margin: 0;
   text-align: center;
-  flex-grow: 1; /* Allows the title to grow and take available space */
+  flex-grow: 1;
 }
 
 header .menu-btn {
@@ -74,8 +76,8 @@ header .menu-btn {
 }
 
 header .menu-btn:focus {
-  outline: 2px solid #ffffff; /* White border on focus */
-  outline-offset: 4px; /* Space between the border and the button */
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
 }
 
 .sidebar {
@@ -87,7 +89,7 @@ header .menu-btn:focus {
   background-color: #542d11cf;
   padding-top: 60px;
   transition: 0.3s;
-  z-index: 1000; /* Ensures the sidebar sits above other content */
+  z-index: 1000;
 }
 
 .sidebar nav a {
@@ -111,8 +113,14 @@ header .menu-btn:focus {
   top: 0;
   left: 0;
   background-color: rgba(0,0,0,0.5);
-  z-index: 500; /* Ensures the overlay sits above other content */
+  z-index: 500;
   cursor: pointer;
+}
+
+main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -136,11 +144,11 @@ header .menu-btn:focus {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .grid-item:hover {
-  transform: scale(1.05); /* Slight zoom-in effect */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow */
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .grid-item img {
@@ -161,7 +169,6 @@ header .menu-btn:focus {
   font-size: 1.2em;
 }
 
-/* Styling for the lightbox (hidden by default) */
 .lightbox {
   position: fixed;
   top: 0;
@@ -202,16 +209,17 @@ footer {
   text-align: center;
   padding: 5px;
   width: 100%;
+  flex-shrink: 0;
 }
 
 a {
   color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s ease; /* Add transition for smooth color change */
+  transition: color 0.3s ease;
 }
 
 a:focus {
-  outline: 2px solid #7f5118; /* Brown Outline */
+  outline: 2px solid #7f5118;
   outline-offset: 4px;
 }
 
@@ -242,7 +250,6 @@ p {
   padding-bottom: 20px;
 }
 
-/* Additional styles for subpage */
 .job {
   background: #fff;
   border: 1px solid #ccc;
@@ -252,7 +259,7 @@ p {
   transition: box-shadow 0.3s ease;
 }
 .job:hover {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .job-title {
@@ -271,7 +278,7 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
-  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease; /* Add transition */
+  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
 }
 
 a:hover {

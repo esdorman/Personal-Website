@@ -116,6 +116,12 @@ header .menu-btn:focus {
   cursor: pointer;
 }
 
+main {
+  flex: 1 0 auto; /* Allow the main content to grow and take available space */
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   flex: 1;
   display: flex;
@@ -183,6 +189,7 @@ footer {
   text-align: center;
   padding: 5px;
   width: 100%;
+  flex-shrink: 0;
 }
 
 a {
@@ -191,7 +198,7 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
-  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease; /* Add transition */
+  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
 }
 
 a:hover {
@@ -200,7 +207,6 @@ a:hover {
   padding-left: 20px;
   text-decoration: underline;
 }
-
 
 .contact-info p {
   color: #ffffff;

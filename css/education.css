@@ -32,9 +32,9 @@ html, body {
   background-color: #f1f1f1;
   color: #333333;
   height: 100%;
-  margin: 0; /* Reset default margin */
+  margin: 0; /*Reset default margin*/
   display: flex;
-  flex-direction: column; /* Arrange body elements in a column */
+  flex-direction: column;
 }
 
 header {
@@ -126,14 +126,6 @@ header .menu-btn:focus {
   gap: 20px;
 }
 
-.profile-pic {
-  width: 400px;
-  height: 400px; /* Ensure the image is square */
-  border-radius: 50%;
-  border: 5px solid #542d11c1;
-  margin: auto;
-}
-
 .content {
   flex: 1 1 auto;
   max-width: 1300px;
@@ -145,7 +137,7 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
-  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease; /* Add transition */
+  transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
 }
 
 a:hover {
@@ -164,7 +156,7 @@ a:hover {
 }
 
 .interests a {
-  transition: padding-left 0.3s ease, padding-right 0.3s ease; /* Add transition */
+  transition: padding-left 0.3s ease, padding-right 0.3s ease;
 }
 
 .interests a:hover {
@@ -173,7 +165,7 @@ a:hover {
 }
 
 .experience a {
-  transition: padding-left 0.3s ease, padding-right 0.3s ease; /* Add transition */
+  transition: padding-left 0.3s ease, padding-right 0.3s ease;
 }
 
 .experience a:hover {
@@ -182,7 +174,7 @@ a:hover {
 }
 
 .education a {
-  transition: padding-left 0.3s ease, padding-right 0.3s ease; /* Add transition */
+  transition: padding-left 0.3s ease, padding-right 0.3s ease;
 }
 
 .education a:hover {
@@ -191,13 +183,12 @@ a:hover {
 }
 
 .contact-info p {
-  color: #ffffff; /* White Links */
+  color: #ffffff;
   text-decoration: none;
   padding: 0;
   font-size: 1.2em;
 }
 
-/* Adjusting heading and paragraph sizes */
 h1 {
   font-size: 2.5em;
   font-weight: 400;
